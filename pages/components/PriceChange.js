@@ -10,7 +10,7 @@ const PriceChange = (props) => {
       priceType = 'red'
     }
 
-    return <span style={{'color': priceType}}>{priceChange.toFixed(2)}%</span>
+    return <span style={{'color': priceType}}>{parseFloat(priceChange).toFixed(2)}%</span>
   }
 
   return (
